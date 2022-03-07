@@ -17,7 +17,7 @@ const uid = Math.floor(Math.random() * 100000);
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let doc;
-    if (type.value === "Invoice") {
+    if (type.value === "invoice") {
         doc = new Invoice(uid, toFrom.value, details.value, amount.valueAsNumber);
     }
     else {
